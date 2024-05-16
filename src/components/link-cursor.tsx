@@ -1,11 +1,11 @@
 "use client";
-import { CursorVisibilityContext } from '@/context/useCursorVisibility';
+import { useCursorVisibility } from '@/context/useCursorVisibility';
 import { cn } from '@/lib/utils';
 import React from 'react';
 import { PiArrowUpRight } from 'react-icons/pi';
 
 export default function LinkCursor() {
-    const { isVisible, setIsVisible, isMouseDown } = React.useContext(CursorVisibilityContext);
+    const { isVisible, setIsVisible, isMouseDown } = useCursorVisibility();
     const [cursorPosition, setCursorPosition] = React.useState({ x: 0, y: 0 });
 
     React.useEffect(() => {

@@ -1,8 +1,8 @@
 export const projects = [
     {
         link: "https://chat.manbug.dev",
-        title: "e2ee messenger",
-        description: "an encrypted messenger designed to share API keys."
+        title: "werner",
+        description: "an e2e encrypted messenger designed to share API keys."
     },
     {
         link: "https://calendar.manbug.dev",
