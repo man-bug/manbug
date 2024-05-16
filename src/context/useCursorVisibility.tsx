@@ -21,4 +21,10 @@ export default function CursorVisibilityProvider({ children }: { children: React
     );
 };
 
+// hook
+export function useCursorVisibility() {
+    const ctx = React.useContext(CursorVisibilityContext);
+    if (!ctx) throw new Error("useCursorVisibility needs to be wrapped in CursorVisibilityProvider");
+    return ctx
+};
 

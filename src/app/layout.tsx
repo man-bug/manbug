@@ -30,8 +30,8 @@ export const metadata: Metadata = {
 export default function RootLayout({
     children,
 }: Readonly<{
-    children: React.ReactNode;
-}>) {
+        children: React.ReactNode;
+    }>) {
     return (
         <html lang="en" suppressHydrationWarning>
             <body
@@ -51,9 +51,9 @@ export default function RootLayout({
                     disableTransitionOnChange
                 >
                     <CursorVisibilityProvider>
-                    <div className="flex min-h-screen flex-col">
-                        {children}
-                    </div>
+                        <div className="flex min-h-screen flex-col">
+                            {children}
+                        </div>
                     </CursorVisibilityProvider>
                 </ThemeProvider>
             </body>

@@ -12,7 +12,7 @@ export default function JobList() {
 
             <div className="space-y-3">
                 {jobs.map((job, idx) => (
-                    <Link href={job.link} key={idx} className="space-y-1 block group py-1">
+                    <Link href={job.link} target="_blank" key={idx} className="space-y-1 block group py-1">
                         <div className="flex flex-col">
                             <h3 className="font-medium tracking-tight leading-none group-hover:underline underline-offset-4 font-serif">
                                 {job.title}

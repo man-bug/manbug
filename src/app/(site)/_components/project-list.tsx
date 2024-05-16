@@ -4,11 +4,11 @@ import Link from "next/link";
 import React from "react";
 import { projects } from "./_content";
 import LinkCursor from "@/components/link-cursor";
-import { CursorVisibilityContext } from "@/context/useCursorVisibility";
+import { useCursorVisibility } from "@/context/useCursorVisibility";
 import { cn } from "@/lib/utils";
 
 export default function ProjectList() {
-    const { setIsVisible, isVisible, setIsMouseDown } = React.useContext(CursorVisibilityContext);
+    const { setIsVisible, isVisible, setIsMouseDown } = useCursorVisibility();
 
     return (
         <article draggable={false} className="mx-auto py-4 space-y-4">
