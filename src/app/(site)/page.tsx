@@ -9,14 +9,12 @@ export default function Home() {
         <div className="container">
             <main className="flex min-h-screen flex-col py-8 md:py-16 lg:py-20 max-w-[960px] mx-auto relative">
                 <Hero />
-
                 <section className="w-full mt-4">
                     <hr />
                     <ProjectList />
                     <hr />
                     <JobList />
                 </section>
-
                 <BlogBadge className="fixed bottom-8 right-8" />
             </main>
         </div>

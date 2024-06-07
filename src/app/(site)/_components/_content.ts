@@ -25,7 +25,7 @@ export const jobs = [
         description: "designed and developed internal tools, content management systems, as well as both client & public facing interfaces for recruitment marketing.",
     },
     {
-        link: "https://ocmc-counseling.pages.dev/",
+        link: "https://ocmccounseling.com",
         title: "OCMC Counseling",
         position: "full stack developer & designer",
         timeline: "March 2024 — April 2024",
